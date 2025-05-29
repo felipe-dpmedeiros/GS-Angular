@@ -1,0 +1,40 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parceiros {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.parceiros__titulo {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.parceiros__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.parceiros__logo {
+  max-width: 150px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.parceiros__logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}

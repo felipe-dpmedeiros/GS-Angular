@@ -1,0 +1,19 @@
+<div class="programacao">
+  <div class="programacao__lista">
+    @for(evento of eventos; track $index) {
+      <div appHoverBorder="#FF5100" class="programacao__card">
+        <h3 class="programacao__titulo">{{evento.titulo}}</h3>
+        <p class="programacao__info"><strong>Data:</strong> {{evento.data}}</p>
+        <p class="programacao__info"><strong>Horário:</strong> {{evento.horario}}</p>
+        <p class="programacao__info"><strong>Local:</strong> {{evento.local}}</p>
+        <button class="programacao__botao" (click)="participarEvento(evento.titulo)">
+          Participar
+        </button>
+      </div>
+    }
+  </div>
+
+  <div *ngIf="mensagemInscricao" class="programacao__mensagem">
+    {{ mensagemInscricao }}
+  </div>
+</div>

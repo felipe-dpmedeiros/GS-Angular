@@ -1,0 +1,18 @@
+<h2 class="home__titulo">Home</h2>
+
+@if(mostrar){
+  <p class="home__texto">Global Solution</p>
+  <p class="home__texto">Uma jornada tecnológica rumo ao futuro.</p>
+  <p class="home__texto">Data: 26 de maio</p>
+} @else{
+  <p class="home__evento-terminado">Evento terminado</p>
+}
+
+<img src="assets/Capture.PNG" alt="Imagem do evento Global Solution" class="home__imagem">
+
+<h2 class="home__subtitulo">Destaques</h2>
+<ul class="home__lista">
+  @for(destaque of destaques; track $index){
+    <li class="home__item">{{destaque}}</li>
+  }
+</ul>

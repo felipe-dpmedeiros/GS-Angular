@@ -1,0 +1,40 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gifts {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.gifts__titulo {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.gifts__descricao {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.gifts__imagem {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gifts__imagem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
