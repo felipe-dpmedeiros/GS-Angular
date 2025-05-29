@@ -1,4 +1,6 @@
-# AppControlFlow
+# SiteGS
+
+# Feito por Felipe Della Paschoa de Medeiros e Vinicius Tofoli Pereira
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
 
